@@ -1,0 +1,35 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-gray-900 text-white antialiased;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-semibold tracking-tight;
+}
+
+.section-subtitle {
+  @apply text-gray-300 mt-3 leading-relaxed;
+}
+
+.glass-card {
+  @apply bg-gray-800/60 border border-white/10 backdrop-blur-md rounded-xl shadow-card;
+}
+
+.neon-border {
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.25), 0 0 20px rgba(34, 211, 238, 0.15);
+}
+
