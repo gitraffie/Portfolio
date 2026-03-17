@@ -1,10 +1,25 @@
 ﻿import { motion } from 'framer-motion';
 import profileImage from '../assets/profile.jpg';
+import Galaxy from './Galaxy.jsx';
 
 const Header = () => {
   return (
     <header id="home" className="relative py-24">
       <div className="absolute inset-0 -z-10">
+        <Galaxy
+          className="h-full w-full"
+          starSpeed={0.5}
+          density={1}
+          hueShift={140}
+          speed={1}
+          glowIntensity={0.3}
+          saturation={0}
+          mouseRepulsion
+          repulsionStrength={2}
+          twinkleIntensity={0.3}
+          rotationSpeed={0.1}
+          transparent
+        />
         <div className="absolute left-1/2 top-0 h-80 w-80 -translate-x-1/2 rounded-full bg-teal-400/10 blur-3xl" />
         <div className="absolute right-10 top-20 h-72 w-72 rounded-full bg-cyan-500/10 blur-3xl" />
       </div>
